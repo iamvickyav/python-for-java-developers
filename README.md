@@ -45,4 +45,58 @@ E.g. `c = 1 + 4j`
 
 #### string
 
+In Python, Strings is arrays of bytes representing unicode characters. Its case-sensitive 
+
+Unlike Java, there is no `char` data type to store a single character
+
+**Creating String**
+
+Single Quote & Double Quote both can be used to create String
+
+    `name = "Vicky"`
+    `name = 'Vicky'`
+
+To create Multiline String, use triple quotes
+
+    ```python
+    name = """My Name is Vicky. 
+    I am an Indian """
+    ```
+
+**Accessing Characters in String**
+
+In Java, we need to explicitly convert String to Char Array
+
+```java
+public class Main {
+  
+    public static void main(String args[])
+    {
+        String name = "Vicky";
+        char[] ch = name.toCharArray();
+  
+        for (char c : ch) {
+            System.out.println(c);
+        }
+    }
+}
+```
+
+In Python, String can be iterated directly using `in` keyword
+
+```python
+name = "Vicky"
+for x in name:
+    print(x)
+```
+
+**Finding length of String**
+
+use in-built len() function to find length of String
+
+```python
+name = "Vicky" 
+print(len(name))
+```
+
 #### list, tuple, set, bool, dictionary
