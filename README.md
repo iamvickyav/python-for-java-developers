@@ -53,15 +53,15 @@ Unlike Java, there is no `char` data type to store a single character
 
 Single Quote & Double Quote both can be used to create String
 
-    `name = "Vicky"`
-    `name = 'Vicky'`
+ `name = "Vicky"`
+ `name = 'Vicky'`
 
 To create Multiline String, use triple quotes
 
-    ```python
-    name = """My Name is Vicky. 
-    I am an Indian """
-    ```
+ ```python
+ name = """My Name is Vicky. 
+ I am an Indian """
+ ```
 
 **Accessing Characters in String**
 
