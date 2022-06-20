@@ -1,0 +1,128 @@
+# String Manipulation in Python
+
+## Understanding String in Python
+
+* Strings are **arrays of bytes** representing unicode characters
+
+* Strings are case sensitive
+
+* Unlike Java, there is no **char** data type to store a single character
+
+* Single Quote & Double Quote both can be used to create String
+
+  name = "Vicky" & name = 'Vicky' are same
+
+* To create Multiline String, use triple quotes
+
+  name = """My Name is Vicky. 
+  I am an Indian
+  """
+
+* Unlike Java, we don't have to convert String to Character Array to Loop them
+
+  for x in "Vicky":
+  print(x)
+
+* To find length, use len() function
+
+  name = "Vicky"
+  print(len(name))
+
+
+## String Operations
+
+### Slicing
+
+```python
+name = "vicky"
+
+# first character
+print(name[0])
+# prints -> v
+
+# from 1st character to 2nd character. End Index is excluded
+print(name[0:2])
+# prints -> vi
+
+print(name[1:3])
+# prints -> ic
+
+# If start index not specified, default is 0. End Index is excluded
+print(name[:2])
+# prints -> vi
+
+# -2 means second last character. So from 0 index till last 2 characters
+print(name[:-2])
+# prints -> vic
+
+# If end index not specified, default is end of string
+print(name[1:])
+# prints -> icky
+
+print(name[-2:])
+# prints -> ky
+```
+
+### Modifying
+
+```python
+name = "vicky is my name"
+
+print(name.capitalize())
+# prints -> Vicky is my name
+
+print(name.upper())
+# prints -> VICKY IS MY NAME
+
+print(name.lower())
+# prints -> vicky is my name
+
+print(name.title())
+# prints -> Vicky Is My Name
+
+print(name.swapcase())
+# prints -> VICKY IS MY NAME
+
+name = " vicky "
+print(name.strip())
+# prints -> vicky
+
+a = "Hello!"
+print(a.replace("l", "x"))
+# prints -> Hexxo
+
+a = "Hello!"
+print(a.replace("L", "x"))
+# prints -> Hello
+
+a = "Hello World !"
+print(a.split())
+# prints -> ['Hello', 'World', '!']
+
+a = "Hello, World"
+print(a.split(","))
+# prints -> ['Hello', 'World']
+
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c) 
+# prints -> Hello World
+
+```
+
+## Formatting
+
+```python
+age = 24
+old = "old"
+txt = "I am {} years {}"
+print(txt.format(age, old))
+# prints -> I am 24 years old
+```
+
+
+
+
+
