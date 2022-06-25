@@ -100,3 +100,14 @@ print(len(name))
 ```
 
 #### list, tuple, set, bool, dictionary
+
+
+## Command Line Arguments
+
+```python
+import sys
+
+def main():
+    print('Hello ', sys.argv[1])
+```
+
