@@ -10,3 +10,10 @@ def fib(n):
         a, b = b, a+b
     print()
 ```
+
+## char to int
+
+```python
+ord('a')
+# Will print 97
+```
