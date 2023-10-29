@@ -118,3 +118,29 @@ def is_prime(num):
 primes = list(filter(is_prime, nums))
 print(primes)
 ```
+
+## Max function
+
+```python
+nums = [1, 2, 3, 5, 4, 5, 4]
+print(max(nums))
+# 5
+
+nums = [1, 2, 3, 3, 4, 5, 4]
+max_occurred = max(nums, key=nums.count)
+print(max_occurred)
+# 3
+
+print(max(("python", "lua", "ruby"), key=len))
+# python
+
+print(max("c", "b", "a", "Y", "Z", key=str.lower))
+# Z
+
+print(max([]))
+# ValueError
+
+print(max([], default=0))
+# 0
+```
+
